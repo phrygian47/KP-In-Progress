@@ -1,0 +1,69 @@
+.menu {
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 2rem;
+  background-image: url("../../../public/about-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+}
+
+.about_keokuk h1 {
+  font-size: 4rem;
+}
+.about_keokuk h2 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.image {
+  border-radius: 2rem;
+}
+
+.about_keokuk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about_keokuk p {
+  margin-top: 1rem;
+}
+
+.description {
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.description h2 {
+  font-size: 2rem;
+}
+.description h3 {
+  font-style: italic;
+}
+
+.description p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.description ul {
+  list-style: none;
+}
+
+.description hr {
+  outline: none;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #546d57;
+  border: none;
+}

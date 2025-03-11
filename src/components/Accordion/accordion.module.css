@@ -1,0 +1,59 @@
+.accordion_container {
+  border-bottom: 1px solid black;
+  margin: 2rem;
+}
+
+.accordion_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion_item p {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.accordion_item:hover {
+  background-color: rgb(255, 242, 224);
+  transition: background-color 0.2s ease-in-out;
+  .titleEmp {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+  }
+}
+
+.titleEmp {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #bb0000;
+  font-weight: 400;
+  transition: letter-spacing 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.icons_open {
+  margin-right: 0.5rem;
+  color: #aa9100;
+  transition: color 0.3s ease-in;
+}
+.icons_closed {
+  margin-right: 0.5rem;
+  color: black;
+  transition: color 0.5s ease-in;
+}
+
+.content_closed {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.content_open {
+  max-height: 200px;
+  opacity: 1;
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}

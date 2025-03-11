@@ -1,6 +1,26 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/Header/header";
 import "./globals.css";
+import FontAwesomeConfig from "./fontawesome";
+import { Playfair_Display, Libre_Baskerville, Roboto } from "next/font/google";
+
+const playfairDisp = Playfair_Display({
+  variable: "--font-playfair-display",
+  subsets: ["latin"],
+});
+
+const libreBaskerville = Libre_Baskerville({
+  variable: "--font-libre-baskerville",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,8 +44,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <FontAwesomeConfig />
+      </head>
+      <body
+        className={` ${playfairDisp.variable} ${libreBaskerville.variable} ${roboto.variable}`}
+      >
         {children}
+        <Header />
       </body>
     </html>
   );
